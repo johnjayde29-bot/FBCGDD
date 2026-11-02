@@ -1,17 +1,23 @@
 {
-	"geode": "$GEODE_VERSION",
-	"gd": {
-		"win": "2.2081",
-		"android": "2.2081",
-		"mac": "2.2081",
-		"ios": "2.2081"
-	},
-	"id": "$MOD_ID",
-	"name": "$MOD_NAME",
-	"version": "$MOD_VERSION",
-	"developer": "$MOD_DEVELOPER",
-	"description": "$MOD_DESCRIPTION",
-	"dependencies": {
-		"geode.node-ids": ">=v1.23.3"
-	}
+  "geode": "4.0.0",
+  "gd": { "android": "2.2074" },
+  "id": "johnjayde29-bot-window",
+  "name": "Frame Window",
+  "version": "v1.0.0",
+  "developer": "johnjayde29-bot",
+  "description": "Shows a frame window with a red line and your click frame.",
+  "settings": {
+    "window-start": {
+      "type": "int",
+      "name": "Window start frame",
+      "default": 100,
+      "min": 0
+    },
+    "window-length": {
+      "type": "int",
+      "name": "Window length (frames)",
+      "default": 3,
+      "min": 1
+    }
+  }
 }
