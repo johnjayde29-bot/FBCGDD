@@ -6,8 +6,9 @@ on:
 jobs:
   build:
     strategy:
+      fail-fast: false
       matrix:
-        target: [Android32, Android64]
+        target: [Android64, Android32]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
